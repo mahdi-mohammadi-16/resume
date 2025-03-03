@@ -6,13 +6,18 @@
 body{
     /* border: #ffffff solid 26px; */
     background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 90%;
+    margin: 0 auto;
 }
 .row::after {
     content: "";
