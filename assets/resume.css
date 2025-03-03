@@ -2,7 +2,11 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: "Lexend", sans-serif;
+
 }
+
+
 body{
     /* border: #ffffff solid 56px; */
     background-color: #ffffff;
@@ -169,8 +173,8 @@ body{
     color: #000B58;
     position: absolute;
     bottom: 6px;
-    top: 56px;
-    left: 210px;
+    top: 0px;
+    left: 146px;
 
 }
 .Hamburger-Menu li a{
@@ -220,7 +224,7 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 0px 10px;
     margin-top: 20px;
     height: 470px;
 }
@@ -239,7 +243,7 @@ body{
 
 
 .my-Information{
-    margin: 15px 0px;
+    margin: 5px 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -595,7 +599,7 @@ body{
   color: #000B58;
   text-align: center;
   padding: 5px 30px;
-  margin: 25px 0px 35px 0px;
+  margin: 25px 0px 30px 0px;
   border-radius: 20px;
 }
 .content-SERVICES{
@@ -605,7 +609,7 @@ body{
   flex-wrap: wrap;
 }
 .content-SERVICES div{
-  width: 150px;
+  width: 145px;
   margin: 10px;
 }
 .vacant-part{
