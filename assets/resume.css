@@ -2,15 +2,10 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    /* max-width: 100%; */
 }
 body{
-    /* border: #ffffff solid 26px; */
+    border: #ffffff solid 56px;
     background-color: #ffffff;
-    /* width: 100%; */
-    /* margin: 0;
-    padding: 0; */
-    /* overflow-x: hidden; */
 }
 .container{
     display: flex;
@@ -174,8 +169,8 @@ body{
     color: #000B58;
     position: absolute;
     bottom: 6px;
-    top: 26px;
-    left: 220px;
+    top: 56px;
+    left: 210px;
 
 }
 .Hamburger-Menu li a{
@@ -186,7 +181,6 @@ body{
     color: #D8C4B6;
     font-size: 20px;
     margin-top: 10px;
-    /* margin-left: 100px; */
     
 }
 /* rew2-------------------------------------------------------- */
@@ -195,7 +189,7 @@ body{
     justify-content: flex-end;
 }
 .hero-imge{
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -207,7 +201,7 @@ body{
     padding: 10px;
 }
 .hero-imge img{
-    width: 80%;
+    width: 100%;
     border-radius: 50%;
 }
 .my-img{
@@ -227,7 +221,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     height: 470px;
 }
 .title-about-my{
@@ -245,12 +239,11 @@ body{
 
 
 .my-Information{
-    margin: 20px 0px;
+    margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center; */
     align-content: center;
 }
 .my-Information div{
@@ -271,7 +264,7 @@ body{
     --back_color: #fcdb5d;
   }
   .button {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 0;
     width: 240px;
@@ -533,7 +526,7 @@ body{
   margin-bottom: 15px;
 }
 .Section-skills div{
-  margin: 20px 60px;
+  margin: 20px 35px;
 }
 .Section-skills div p{
   margin-top: 5px;
