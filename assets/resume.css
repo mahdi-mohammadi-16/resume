@@ -9,7 +9,7 @@
 
 body{
     /* border: #ffffff solid 56px; */
-    background-color: #ffffff;
+    background-color: #D8C4B6;
 }
 .container{
     display: flex;
@@ -89,7 +89,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .header-itme li{
     display: flex;
@@ -120,7 +119,7 @@ body{
 	position: absolute;
 }
 
-.wrapper h1:nth-child(1) {
+.wrapper h1:nth-child(2) {
 	color: transparent;
 	-webkit-text-stroke: 1.9px #000B58;
 }
@@ -162,21 +161,12 @@ body{
 }
 
 /*---------------------------------*/
-.header-hamburger:hover .Hamburger-Menu{
-    display: block;
-}
-.Hamburger-Menu{
-    display: none;
-    width: 240px;
-    height: 100%;
-    background-color: #000B58;
-    color: #000B58;
-    position: absolute;
-    bottom: 6px;
-    top: 0px;
-    left: 146px;
+ #button-Hamburger{
+  background-color: #D8C4B6;
+  border: none;
+ }
+ 
 
-}
 .Hamburger-Menu li a{
     display: flex;
     justify-content: center;
@@ -186,6 +176,23 @@ body{
     font-size: 20px;
     margin-top: 10px;
     
+}
+#Hamburger-Menu {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: -290px; /* پنهان‌شده */
+  width: 250px;
+  height: 100%;
+  background-color: #000B58;
+  color: #000B58;
+  transition: left 0.3s ease;
+  padding: 20px;
+
+}
+
+#Hamburger-Menu.open {
+  right: 0; /* نمایش داده می‌شه */
 }
 /* rew2-------------------------------------------------------- */
 .row2{
@@ -624,6 +631,7 @@ body{
   align-items: center;
   flex-direction: column;
   display: flex;
+
 }
 .title-contactme{
   text-align: center;
@@ -638,6 +646,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .search-end button{
   background-color: #000B58;
@@ -645,6 +654,11 @@ body{
   color: #fff;
   border-radius: 40px;
   margin-left: 5px;
+
+}
+#search-end-p{
+  margin-top: 10px;
+  color: red;
 }
 input[type=text] {
   width: 100%;
