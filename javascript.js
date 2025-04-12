@@ -1,3 +1,15 @@
+// انیمیشن اسکرول
+AOS.init();
+
+
+new Typed('#typed', {
+  strings: ["Web Designer","Love programming","Love to learn"],
+  typeSpeed: 70,
+  backSpeed: 50,
+  loop: true
+});
+
+
 const sidebar = document.getElementById('Hamburger-Menu');
 const toggleButton = document.getElementById('button-Hamburger');
 
@@ -15,6 +27,9 @@ document.addEventListener('click', function(event) {
 sidebar.addEventListener('click', function(event) {
   event.stopPropagation(); // نذار کلیک داخل سایدبار باعث بسته شدن بشه
 });
+
+
+
 
 
 
