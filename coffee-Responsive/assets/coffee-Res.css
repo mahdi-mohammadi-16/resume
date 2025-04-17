@@ -34,7 +34,7 @@
     }
 
     .heder-width{ 
-        width: 400px;
+        width: 365px;
         height: 250px;
     }
     .font-size-h2{
@@ -180,7 +180,7 @@
     }
 }
 body{
-    /* border: #000 solid 56px; */
+    /* border: #ffffff solid 26px; */
     background-color: #FFEDD8;
 }
 .container{
