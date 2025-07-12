@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".//tic-tac-toe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+  <div class="content">
+
+    <div class="Score-section">
+      <div>
+        <img src="./imge/icons8-o-key-64.png" alt="">
+        <h1 id="playerCircle">0</h1>
+      </div>
+      <div>
+        <h1 id="playerCross">0</h1>
+        <img src="./imge/icons8-x-key-64.png" alt="">
+
+      </div>
+      
+    </div>
+    <div class="playground">
+      
+      <ul id="ul" class="ul">
+        <li id="li1" class="li1"></li>
+        <li id="li2" class="li" style="border-left: 1px solid rgb(202, 202, 202)"></li>
+        <li id="li3" class="li" style="border-left: 1px solid rgb(202, 202, 202)"></li>
+      </ul>
+      
+      <ul id="ul" class="ul"  style="border-top: 1px solid rgb(202, 202, 202)">
+        <li id="li4" class="li"></li>
+        <li id="li5" class="li" style="border-left: 1px solid rgb(202, 202, 202)"></li>
+        <li id="li6" class="li" style="border-left: 1px solid rgb(202, 202, 202)"></li>
+      </ul>
+      
+      <ul id="ul" class="ul"  style="border-top: 1px solid rgb(202, 202, 202)">
+        <li id="li7" class="li"></li>
+        <li id="li8" class="li" style="border-left: 1px solid rgb(202, 202, 202)"></li>
+        <li id="li9" class="li" style="border-left: 1px solid rgb(202, 202, 202)"></li>
+      </ul>
+      
+      
+    </div>
+    <div class="Score-button">
+      <button type="button" id="Refresh">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-repeat"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+          ></path>
+        </svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+  
+  <script src=".//tic-tac-toe.js"></script>
+</body>
+</html>

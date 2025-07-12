@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.div1{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+.button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    display: block;
+    margin: 120px auto;
+   }
+   
+   .button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 820px;
+    height: 350px;
+    background-color: #222222;
+    margin:100px auto;
+    border-radius: 9px;
+    box-shadow:  7px 7px 14px #0a0a0a,
+             -7px -7px 14px #0a0a0a;
+}
+.rew{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 820px;
+}
+.button-keyboard{
+    width: 70px;
+    height: 43px;
+    margin: 4px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    margin: 0px 7px;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #0e0d0d, #0c0b0b);
+    box-shadow:  9px 9px 18px #070707,-9px -9px 18px #131111; */
+}
+.lk{
+    background-color: black;
+    color: yellow;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #0e0d0d, #0c0b0b);
+    box-shadow: inset 18px 18px 36px #070707,
+                inset -18px -18px 36px #131111;
+}

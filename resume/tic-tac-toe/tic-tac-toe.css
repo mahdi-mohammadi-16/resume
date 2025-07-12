@@ -1,0 +1,122 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.content{
+  font-family: "Pacifico", cursive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}  
+.Score-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+
+}
+.Score-section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Score-section div img{
+  margin: 0px 65 px;
+}
+.playground{
+  margin:100px auto;
+  width: 390px;
+  height: 390px;
+  background-color: black;
+}
+.playground ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.playground ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  
+
+}
+.o{
+  background-image: url(.//imge/icons8-o-key-64.png);
+  background-repeat: no-repeat;
+  background-size: 85px;
+  background-position: center;
+}
+.x{
+  background-image: url(.//imge/icons8-x-key-64.png);
+  background-repeat: no-repeat;
+  background-size: 85px;
+  background-position: center;
+}
+
+
+
+/* ----------------------button Refresh---------------- */
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.Score-button{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 5px;
+}
+#Refresh {
+  color: #9c34c2;
+  background-color: #fbb142;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+#Refresh:hover {
+  background-color: #fac679;
+}
+
+#Refresh svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: #9c34c2;
+}
+
+#Refresh:focus svg {
+  animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

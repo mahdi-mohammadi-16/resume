@@ -1,0 +1,403 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif;
+
+}
+body.dark-theme{
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 730px;
+    background-color: #fff;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+body.dark-theme .container{
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+
+}
+.theme-section{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+#toggle-theme {
+  margin: 15px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+
+}
+body.dark-theme #toggle-theme {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+
+}
+.page{
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 18px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+body.dark-theme .page{
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+.add-section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px;
+}
+ .add-title{
+    margin: 30px 30px 0px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 23px;
+}
+.input-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 20px 0px 20px;
+}
+.input{
+    width: 90%;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    width: 100%;
+
+}
+body.dark-theme .input{
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;    width: 100%;
+
+}
+.button-add{    
+    width: 50px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.List-section{
+    width: 90%;
+    margin: 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+.list-title{
+    margin: 25px 30px 0px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 23px;
+
+}
+.item-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.item-list ul{
+    margin: 20px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+}
+.item-list ul li{
+    padding: 15px;
+    margin: 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    /* border: 1px solid rgb(255, 255, 255); */
+
+}
+body.dark-theme .item-list ul li{
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  width: 100%;
+  
+}
+.item-list ul li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn svg {
+  fill: #000000;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s;
+  transition: all 0.3s ease-in-out;
+
+}
+body.dark-theme .delete-btn svg{
+  fill: #ffffff;
+
+}
+
+.delete-btn:hover svg {
+  transform: scale(1.1);
+}
+/* From Uiverse.io by OnCloud125252 */ 
+/* Note that you only needs to edit the config to customize the button! */
+
+.plusButton {
+    /* Config start */
+    --plus_sideLength: 2.5rem;
+    --plus_topRightTriangleSideLength: 1.2rem;
+    /* Config end */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    width: var(--plus_sideLength);
+    height: var(--plus_sideLength);
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  body.dark-theme .plusButton{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #1e1e1e;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+
+  }
+  .plusButton::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
+    border-style: solid;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition: all 0.3s ease-in-out;
+
+  }
+  body.dark-theme .plusButton::before{
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
+
+  }
+  .plusButton:hover {
+    cursor: pointer;
+  }
+  
+  .plusButton:hover::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+  }
+  
+  .plusButton:focus-visible::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+  }
+  
+  .plusButton>.plusIcon {
+    fill: rgb(5, 5, 5);
+    width: calc(var(--plus_sideLength) * 0.7);
+    height: calc(var(--plus_sideLength) * 0.7);
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition: all 0.3s ease-in-out;
+
+  }
+  body.dark-theme .plusButton>.plusIcon{
+    fill: rgb(255, 255, 255);
+
+  }
+  .plusButton:hover>.plusIcon {
+    fill: rgb(255, 255, 255);
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+
+  }
+  body.dark-theme .plusButton:hover>.plusIcon{
+    fill: rgb(0, 0, 0);
+
+  }
+  .plusButton:focus-visible>.plusIcon {
+    fill: rgb(255, 255, 255);
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+
+  }
+  body.dark-theme .plusButton:focus-visible>.plusIcon{
+    fill: rgb(0, 0, 0);
+
+  }
+
+/* From Uiverse.io by Galahhad */ 
+/* checkbox settings 👇 */
+
+.ui-checkbox {
+    --primary-color: #1677ff;
+    --secondary-color: #fff;
+    --primary-hover-color: #4096ff;
+    /* checkbox */
+    --checkbox-diameter: 20px;
+    --checkbox-border-radius: 5px;
+    --checkbox-border-color: #d9d9d9;
+    --checkbox-border-width: 1px;
+    --checkbox-border-style: solid;
+    /* checkmark */
+    --checkmark-size: 1.2;
+    margin-left: 5px;
+  }
+  
+  .ui-checkbox, 
+  .ui-checkbox *, 
+  .ui-checkbox *::before, 
+  .ui-checkbox *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .ui-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--checkbox-diameter);
+    height: var(--checkbox-diameter);
+    border-radius: var(--checkbox-border-radius);
+    background: var(--secondary-color);
+    border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .ui-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+    box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  }
+  
+  .ui-checkbox::before {
+    top: 40%;
+    left: 50%;
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  }
+  
+  /* actions */
+  
+  .ui-checkbox:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .ui-checkbox:checked {
+    background: var(--primary-color);
+    border-color: transparent;
+  }
+  
+  .ui-checkbox:checked::before {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  }
+  
+  .ui-checkbox:active:not(:checked)::after {
+    -webkit-transition: none;
+    -o-transition: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
+  }
